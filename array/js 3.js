@@ -33,6 +33,4 @@ document.write(fruits[4]);
 
 
 
-
-
 // programar ki counting 0  se start ho ti hai
