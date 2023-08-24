@@ -123,41 +123,35 @@
 
 // chapter 04
 
-// 01
+// // 01
 
-var heading = ("Rules for naming JS variables<br><br>");
+// var heading = ("Rules for naming JS variables<br><br>");
 
-var point1 = ("Variable names can only contain numbers,_ and $. For example $my_1stVariable.<br>");
-var point2 = ("Variables must begin with a letter,_ or $. For example $name, _name or name.<br>");
-var point3 = ("Variable names are case sensitive.<br>");
-var point4 = ("Variable names should not be JS key-words.<br><br>");
+// var point1 = ("Variable names can only contain numbers,_ and $. For example $my_1stVariable.<br>");
+// var point2 = ("Variables must begin with a letter,_ or $. For example $name, _name or name.<br>");
+// var point3 = ("Variable names are case sensitive.<br>");
+// var point4 = ("Variable names should not be JS key-words.<br><br>");
 
-document.write(point1+" "+point2+" "+point3+" "+point4);
-
-
-
-// 02
-
-// legal var names
-
-document.write("legal names:<br>");
-var legalNames = ("point1, quantity, selling_product, $visitor, name<br><br>");
-document.write(legalNames);
-
-// legal var names end
+// document.write(point1+" "+point2+" "+point3+" "+point4);
 
 
 
-// illegal var names
+// // 02
 
-document.write("illegal names:<br>");
-var illegalNames = ("1point, @quantity, selling-Product, visitor!, name*");
-document.write(legalNames);
+// // legal var names
 
-// illegal var names end
+// document.write("legal names:<br>");
+// var legalNames = ("point1, quantity, selling_product, $visitor, name<br><br>");
+// document.write(legalNames);
 
-
-
-
+// // legal var names end
 
 
+
+// // illegal var names
+
+// document.write("illegal names:<br>");
+// var illegalNames = ("1point, @quantity, selling-Product, visitor!, name*");
+// document.write(legalNames);
+
+// // illegal var names end
