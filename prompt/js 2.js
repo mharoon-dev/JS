@@ -285,17 +285,3 @@ let percent3 = ((marks3 / totalMarks) * 100);
 document.write(subject1    +" "+ totalMarks+" "+    marks1+" "+ percent1+"%<br>");
 document.write(subject2    +" "+ totalMarks+" "+    marks2+" "+ percent2+"%<br>");
 document.write(subject3    +" "+ totalMarks+" "+    marks3+" "+ percent3+"%<br>");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
