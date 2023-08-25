@@ -35,4 +35,15 @@ if (ans3.toLowerCase() === "cascading style sheets") {
     alert("sorry! you are wrong")
 }
 
+// question 04
+
+let ans4 = prompt ("what is the full form of NAN in JS?");
+
+if (ans4.toLowerCase() === "not a number ") {
+    alert("correct! you got 1 point.");
+    ++point
+} else {
+    alert("sorry! you are wrong")
+}
+
 document.write("you got " + point + " points.");
