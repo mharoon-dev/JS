@@ -45,5 +45,5 @@ if (ans4.toLowerCase() === "not a number ") {
 } else {
     alert("sorry! you are wrong")
 }
-
+var element = 
 document.write("you got " + point + " points.");
