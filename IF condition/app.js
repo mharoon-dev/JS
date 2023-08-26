@@ -47,3 +47,10 @@ if (ans4.toLowerCase() === "not a number ") {
 }
 var element = 
 document.write("you got " + point + " points.");
+
+
+
+
+
+
+
