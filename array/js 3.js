@@ -9,28 +9,55 @@
 
 
 
-                //00     //01    //02    //03      //04
-let fruits = ["apple","mango","banana","orange","strawberry",]
+//                 //00     //01    //02    //03      //04
+// let fruits = ["apple","mango","banana","orange","strawberry",]
 
-//   and me koi element ka izafa karne ke liye
+// //   and me koi element ka izafa karne ke liye
 
-                           //05
-fruits[fruits.length] = "kuch bhi" 
-console.log(fruits);
+//                            //05
+// fruits[fruits.length] = "null" 
+// console.log(fruits);
 
-                               //08
-fruits[fruits.length + 2] = "anannas" 
-console.log(fruits);
+//                                //08
+// fruits[fruits.length + 2] = "anannas" 
+// console.log(fruits);
 
-                            //04
-fruits[fruits.length - 5] = "aam" 
-console.log(fruits);
+//                             //04
+// fruits[fruits.length - 5] = "aam" 
+// console.log(fruits);
 
-document.write(fruits[4]);
-
+// document.write(fruits[4]);
 
 
 
 
 
 // programar ki counting 0  se start ho ti hai
+
+
+
+
+
+
+
+// new array
+
+let students = ["haroon","kamil","samad","sami","jamal"];
+
+
+// add in the end
+students.push("ali");
+
+// remove in the end
+students.pop(); // (ali)
+
+// remove in the start
+students.shift() // haroon
+
+// add in the start
+students.unshift("haroon") // haroon
+
+// students.splice()
+            //  add from  remove   kia add karna hai
+students.splice(  1,        4,      "ali","ahmad","muhammad");
+
