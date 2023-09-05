@@ -59,9 +59,9 @@ function signupButton() {
     } else if (email.value == user4) {
         alert("Account is already exist from this email address.")
     } else {
-        alert("user sign-up successfully")
+        // alert("user sign-up successfully")
+        window.location.href = './home.html'
     } 
-    window.location = './home.html'
 } 
 
 
