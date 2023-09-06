@@ -40,24 +40,31 @@
 
 
 
-// new array
+// // new array
 
-let students = ["haroon","kamil","samad","sami","jamal"];
+// let students = ["haroon","kamil","samad","sami","jamal"];
 
 
-// add in the end
-students.push("ali");
+// // add in the end
+// students.push("ali");
 
-// remove in the end
-students.pop(); // (ali)
+// // remove in the end
+// students.pop(); // (ali)
 
-// remove in the start
-students.shift() // haroon
+// // remove in the start
+// students.shift() // haroon
 
-// add in the start
-students.unshift("haroon") // haroon
+// // add in the start
+// students.unshift("haroon") // haroon
 
-// students.splice()
-            //  add from  remove   kia add karna hai
-students.splice(  1,        4,      "ali","ahmad","muhammad");
+// // students.splice()
+//             //  add from  remove   kia add karna hai
+// students.splice(  1,        4,      "ali","ahmad","muhammad");
+
+// menu array  0          1       2       3         4
+let menu = ["samoosa","biryani","bbq","korma","cold drink"]
+                     // index     length
+let dinner = menu.slice(  1,        4   )
+
+let lunch = menu.splice(1,2)
 
