@@ -32,7 +32,7 @@ if (ans3.toLowerCase() === "cascading style sheets") {
     alert("correct! you got 1 point.");
     ++point
 } else {
-    alert("sorry! you are wrong")
+    alert("sorry! you are wrong")  
 }
 
 // question 04
