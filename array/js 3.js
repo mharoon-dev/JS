@@ -62,9 +62,43 @@
 // students.splice(  1,        4,      "ali","ahmad","muhammad");
 
 // menu array  0          1       2       3         4
-let menu = ["samoosa","biryani","bbq","korma","cold drink"]
-                     // index     length
-let dinner = menu.slice(  1,        4   )
+// let menu = ["samoosa","biryani","bbq","korma","cold drink"]
+//                      // index     length
+// let dinner = menu.slice(  1,        4   )
 
-let lunch = menu.splice(1,2)
+// let lunch = menu.splice(1,2)
+
+
+
+// foreach
+
+
+let food = [
+    {name:"biryani", weight:"30kg"},
+    {name:"korma", weight:"10kg"},
+    {name:"white karahi" ,weight:"10kg" }
+]
+
+food.forEach(function(value) {
+    console.log(value.name)
+})
+
+
+// map
+
+let students = [
+    { id:1, name: "haroon"  , score: 40   , fav_sub: "maths" },
+    { id:2, name:  "sami"   , score: 50   , fav_sub:  "english"},
+    { id:3, name:  "jamal"  , score: 60   , fav_sub:  "urdu"},
+    { id:4, name:  "kamil"  , score: 70   , fav_sub:  "islamiat"},
+    { id:5, name:  "samad"  , score: 80   , fav_sub:  "arabic"}
+]
+
+const students2 = students.map(function(value) {
+    return {...value , role: "student"}
+})
+
+console.log (students2)
+
+
 
