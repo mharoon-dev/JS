@@ -70,7 +70,8 @@
 
 
 
-// foreach
+// foreach                 // array return nahi kar ta
+                           // (new array me convert nahi ho ta usi array me changes kar ta hai)
 
 
 let food = [
@@ -84,7 +85,8 @@ food.forEach(function(value) {
 })
 
 
-// map
+// map                           // array return kar ta  (modification ke liye kaam ata hai)
+                                // (naya array bana de ta hai porana wala wesa hi rehta hai)
 
 let students = [
     { id:1, name: "haroon"  , score: 40   , fav_sub: "maths" },
@@ -98,7 +100,7 @@ const students2 = students.map(function(value) {
     return {...value , role: "student"}
 })
 
-console.log (students2)
-
+console.log(students)
+console.log(students2)
 
 
