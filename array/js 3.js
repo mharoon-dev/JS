@@ -137,6 +137,6 @@ let childrenFind = [
 
 let specificId = childrenFind.find(function(value) {
     return value.id === 16
-})
+}).id
  
-console.log(specificId.id)
+console.log(specificId)
