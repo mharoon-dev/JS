@@ -70,37 +70,73 @@
 
 
 
-// foreach                 // array return nahi kar ta
-                           // (new array me convert nahi ho ta usi array me changes kar ta hai)
+// // foreach                 // array return nahi kar ta
+//                            // (new array me convert nahi ho ta usi array me changes kar ta hai)
 
 
-let food = [
-    {name:"biryani", weight:"30kg"},
-    {name:"korma", weight:"10kg"},
-    {name:"white karahi" ,weight:"10kg" }
+// let food = [
+//     {name:"biryani", weight:"30kg"},
+//     {name:"korma", weight:"10kg"},
+//     {name:"white karahi" ,weight:"10kg" }
+// ]
+
+// food.forEach(function(value) {
+//     console.log(value.name)
+// })
+
+
+// // map                           // array return kar ta  (modification ke liye kaam ata hai)
+//                                 // (naya array bana de ta hai porana wala wesa hi rehta hai)
+
+// let students = [
+//     { id:1, name: "haroon"  , score: 40   , fav_sub: "maths" },
+//     { id:2, name:  "sami"   , score: 50   , fav_sub:  "english"},
+//     { id:3, name:  "jamal"  , score: 60   , fav_sub:  "urdu"},
+//     { id:4, name:  "kamil"  , score: 70   , fav_sub:  "islamiat"},
+//     { id:5, name:  "samad"  , score: 80   , fav_sub:  "arabic"}
+// ]
+
+// const students2 = students.map(function(value) {
+//     return {...value , role: "student"}
+// })
+
+// console.log(students)
+// console.log(students2)
+
+
+
+// filters
+
+let children = [
+    { id:1, name: "haroon"  , score: 60   , fav_sub: "maths" },
+    { id:2, name:  "sami"   , score: 90   , fav_sub:  "english"},
+    { id:3, name:  "jamal"  , score: 100   , fav_sub:  "urdu"},
+    { id:4, name:  "kamil"  , score: 80   , fav_sub:  "islamiat"},
+    { id:5, name:  "samad"  , score: 90   , fav_sub:  "arabic"}
 ]
 
-food.forEach(function(value) {
-    console.log(value.name)
+let childrenHighScore = children.filter(function(childrenArray) {
+    if (childrenArray.score >= 80) return true
+}).map(function(value) {
+    return value.score
 })
 
+console.log(childrenHighScore)
 
-// map                           // array return kar ta  (modification ke liye kaam ata hai)
-                                // (naya array bana de ta hai porana wala wesa hi rehta hai)
 
-let students = [
-    { id:1, name: "haroon"  , score: 40   , fav_sub: "maths" },
-    { id:2, name:  "sami"   , score: 50   , fav_sub:  "english"},
-    { id:3, name:  "jamal"  , score: 60   , fav_sub:  "urdu"},
-    { id:4, name:  "kamil"  , score: 70   , fav_sub:  "islamiat"},
-    { id:5, name:  "samad"  , score: 80   , fav_sub:  "arabic"}
+
+// find
+
+let childrenFind = [
+    { id:1, name: "haroon"  , score: 60   , fav_sub: "maths", id:10 },
+    { id:2, name:  "sami"   , score: 90   , fav_sub:  "english", id:12},
+    { id:3, name:  "jamal"  , score: 100   , fav_sub:  "urdu", id:14},
+    { id:4, name:  "kamil"  , score: 80   , fav_sub:  "islamiat", id:16},
+    { id:5, name:  "samad"  , score: 90   , fav_sub:  "arabic", id:18}
 ]
 
-const students2 = students.map(function(value) {
-    return {...value , role: "student"}
+let specificId = childrenFind.find(function(value) {
+    return value.id === 16
 })
-
-console.log(students)
-console.log(students2)
-
-
+ 
+console.log(specificId.id)
