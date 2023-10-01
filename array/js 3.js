@@ -107,36 +107,87 @@
 
 // filters
 
+// let children = [
+//     { id:1, name: "haroon"  , score: 60   , fav_sub: "maths" },
+//     { id:2, name:  "sami"   , score: 90   , fav_sub:  "english"},
+//     { id:3, name:  "jamal"  , score: 100   , fav_sub:  "urdu"},
+//     { id:4, name:  "kamil"  , score: 80   , fav_sub:  "islamiat"},
+//     { id:5, name:  "samad"  , score: 90   , fav_sub:  "arabic"}
+// ]
+
+// let childrenHighScore = children.filter(function(childrenArray) {
+//     if (childrenArray.score >= 80) return true
+// }).map(function(value) {
+//     return value.score
+// })
+
+// console.log(childrenHighScore)
+
+
+
+// // find
+
+// let childrenFind = [
+//     { id:1, name: "haroon"  , score: 60   , fav_sub: "maths", id:10 },
+//     { id:2, name:  "sami"   , score: 90   , fav_sub:  "english", id:12},
+//     { id:3, name:  "jamal"  , score: 100   , fav_sub:  "urdu", id:14},
+//     { id:4, name:  "kamil"  , score: 80   , fav_sub:  "islamiat", id:16},
+//     { id:5, name:  "samad"  , score: 90   , fav_sub:  "arabic", id:18}
+// ]
+
+// let specificId = childrenFind.find(function(value) {
+//     return value.id === 16
+// }).id
+ 
+// console.log(specificId)
+
+
+
+
+
+// reduce
+
 let children = [
-    { id:1, name: "haroon"  , score: 60   , fav_sub: "maths" },
+    { id:1, name: "haroon"  , score: 60   , fav_sub: "english" },
     { id:2, name:  "sami"   , score: 90   , fav_sub:  "english"},
     { id:3, name:  "jamal"  , score: 100   , fav_sub:  "urdu"},
-    { id:4, name:  "kamil"  , score: 80   , fav_sub:  "islamiat"},
+    { id:4, name:  "kamil"  , score: 80   , fav_sub:  "urdu"},
     { id:5, name:  "samad"  , score: 90   , fav_sub:  "arabic"}
 ]
 
-let childrenHighScore = children.filter(function(childrenArray) {
-    if (childrenArray.score >= 80) return true
-}).map(function(value) {
-    return value.score
-})
+let totalScore = children.reduce(function(previous,current) {
+    previous += current.score
+    return previous
 
-console.log(childrenHighScore)
+},0)
+
+let averageScore = totalScore/children.length
+
+console.log(averageScore)
+
+// let survey = children.reduce(function(previous,current) {
+// },{})
 
 
 
-// find
 
-let childrenFind = [
-    { id:1, name: "haroon"  , score: 60   , fav_sub: "maths", id:10 },
-    { id:2, name:  "sami"   , score: 90   , fav_sub:  "english", id:12},
-    { id:3, name:  "jamal"  , score: 100   , fav_sub:  "urdu", id:14},
-    { id:4, name:  "kamil"  , score: 80   , fav_sub:  "islamiat", id:16},
-    { id:5, name:  "samad"  , score: 90   , fav_sub:  "arabic", id:18}
-]
 
-let specificId = childrenFind.find(function(value) {
-    return value.id === 16
-}).id
- 
-console.log(specificId)
+
+
+
+
+
+
+// let foodOrder = [
+//     {name:"korma" ,price:500},
+//     {name:"biryani" ,price:400},
+//     {name:"tikka" ,price:350},
+//     {name:"daal chawal" ,price:150},
+// ]
+
+// let bill = foodOrder.reduce(function(previous,current) {
+//     previous += current.price 
+//     return previous
+// },0)
+
+// console.log(bill)
